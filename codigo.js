@@ -53,3 +53,37 @@ function agregrarAlCarrito(producto) {
 
   localStorage.setItem("carrito",JSON.stringify(carrito));
 }
+
+
+const objeto = {
+  tipo: "Remera",
+  color: "Blanca",
+}
+
+console.log(objeto);
+
+const objeto2 = {
+  ...objeto,
+  talle: "XL",
+  precio:4500,
+}
+
+console.log(objeto2)
+
+const objeto3 = {
+  ...objeto2,
+  talle: "L",
+  precio:5500,
+
+}
+console.log(objeto3)
+
+const objeto4 = {
+...objeto3,
+color:"azul",
+talle:"M",
+}
+console.log(objeto4)
+
+const {tipo, color} = objeto4
+console.log(tipo, color);
